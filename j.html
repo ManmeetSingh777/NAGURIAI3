@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D Multiplayer Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div class="health-bars-container">
+      <div id="player1HealthBar" class="health-bar">
+        <div class="bar" id="player1Bar"></div>
+      </div>
+
+      <div id="player2HealthBar" class="health-bar">
+        <div class="bar" id="player2Bar"></div>
+      </div>
+      </div>
+
+    <div id="pl2">
+    </div>
+
+    <div id="timer" class="timer">120</div>
+
+    <div id="other-elements-container">
+      <!-- Other elements go here -->
+      <!-- For example, your canvas -->
+      <div id="tie">TIE</div>
+      <canvas id="Mycanvas"></canvas>
+    </div>
+  </div>
+
+  <div id="mobileControls">
+    <button id="leftButton">Left</button>
+    <button id="rightButton">Right</button>
+    <button id="jumpButton">Jump</button>
+    <button id="attackButton">Attack</button>
+  </div>
+</body>
+</html>
+<script src="./index.js"></script>

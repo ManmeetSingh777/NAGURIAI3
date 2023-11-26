@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Start</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #222;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        input {
+            font-size: 16px;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Game!</h1>
+    
+    <label for="heroName">What's Your name hero?</label>
+    <input type="text" id="heroName" placeholder="Enter your hero name">
+
+    <label for="nickname">Villain name</label>
+    <input type="text" id="nickname" placeholder="Enter your Villain name">
+
+    <button onclick="startGame()">Start Game</button>
+
+    <script>
+        function startGame() {
+            const heroName = document.getElementById('heroName').value;
+            const nickname = document.getElementById('nickname').value;
+
+            // You can use heroName and nickname in your game logic
+            console.log('Hero Name:', heroName);
+            console.log('Nickname:', nickname);
+
+            
+
+            // Redirect to the game page (change 'game.html' to your actual game file)
+            window.location.href = 'j.html';
+        }
+    </script>
+</body>
+</html>

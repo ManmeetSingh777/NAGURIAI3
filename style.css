@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+  }
+
+  #Mycanvas{
+    background-color: #222;
+  }
+  
+  .health-bars-container {
+    display: flex;
+  }
+  
+  .health-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #333;
+    border: 1px solid #fff;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .health-bar .bar {
+    height: 100%;
+    background-color: #4caf50 ; /* Green color for health */
+    transition: width 0.3s ease;
+    width: 100%;
+  }
+  
+  .timer {
+    font-size: 40px;
+  }
+  
+  /* Style for the timer */
+  #timer {
+    position: absolute;
+    right: 675px;;
+    margin-top: 20px;
+  }
+  #player1HealthBar{
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    right: 200px;
+    height: 4vh;
+    width:40vw;
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+
+  #player2HealthBar{
+    position: absolute;
+    top: 0px;
+    left: 850px;
+    height: 4vh;
+    width:40vw;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #tie{
+    position: absolute;
+    color: white;
+   
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 40px;
+    display: none;
+    
+
+  }
+
+ 
+  
+  
+  
+  button {
+    font-size: 16px;
+    margin: 5px;
+    background-color: aqua;
+  }
+  
+  @media only screen and (max-width: 360px) {
+    /* Apply styles for screens with a maximum width of 360px (adjust as needed) */
+  
+    #mobileControls {
+      display: block; /* Show mobile controls */
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+
+  
